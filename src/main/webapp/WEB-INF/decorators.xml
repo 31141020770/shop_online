@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<decorators defaultdir="/decorators">
+	<!-- apply web template -->
+	<decorator name="web" page="web.jsp">
+		<pattern>/home*</pattern>
+	</decorator>
+	<decorator name="customer" page="web.jsp">
+		<pattern>/customer*</pattern>
+	</decorator>
+	<!-- apply admin template -->
+	<decorator name="admin" page="admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+	<decorator name="login" page="login.jsp">
+		<pattern>/login*</pattern>
+	</decorator>
+</decorators>
