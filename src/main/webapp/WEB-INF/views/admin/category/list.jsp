@@ -2,25 +2,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <c:url var="newAPI" value="/api/new"/>
-<c:url var="newURL" value="/admin/news/list"/>
+<c:url var="newURL" value="/admin/categorylist"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Danh sách bài viết</title>
+		<title>List Category</title>
 	</head>
 
 	<body>
 		<div class="main-content">
-		<form action="<c:url value='/admin/product/list'/>" id="formSubmit" method="get">
+		<form action="<c:url value='/admin/categorylist'/>" id="formSubmit" method="get">
 			
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Trang chủ</a>
+								<a href="#">Home</a>
 							</li>
 						</ul>
 						<!-- /.breadcrumb -->
@@ -78,11 +78,11 @@
 															
 															<td>${item.code}</td>
 															<td>
-																<c:url var="updateNewURL" value="/admin/edit">
+																<c:url var="updateNewURL" value="/admin/categoryedit">
 																	<c:param name="id" value="${item.id}"/>
 																</c:url>																
 																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
-																   title="Cập nhật bài viết" href='${updateNewURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+																   title="update category" href='${updateNewURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 																</a>
 															</td>
 														</tr>

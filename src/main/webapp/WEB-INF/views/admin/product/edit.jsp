@@ -1,9 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/common/taglib.jsp"%>
-<c:url var="newURL" value="/admin/news/list"/>
-<c:url var="editNewURL" value="/admin/news/renew"/>
-<c:url var="newAPI" value="/api/new"/>
-<c:url var="thumbnailAPI" value="/api/thumbnail"/>
+
+
 <html>
 <head>
 <title>edit product</title>
@@ -31,7 +29,7 @@
 					</div>
 				</c:if>
 				<!-- in form spring, method modelAtrribute = model is used to mapping the entity columns of model at the form names --> 
-					<form:form commandName="item" class="form-horizontal" id="fileUploadForm" action="save-product" method="post" Name="item" enctype="multipart/form-data">
+					<form:form commandName="item" class="form-horizontal" id="fileUploadForm" action="save-product" method="post" Name="item" modelAttribute="item" enctype="multipart/form-data">
 				
 						<div class="form-group">
 								<label class="col-sm-3 control-label no-padding-right" for="sel1">categories:</label>
@@ -79,7 +77,7 @@
 									<c:if test="${not empty model.id}">
 										<button class="btn btn-info" id="submit" type="submit" >
 											<i class="ace-icon fa fa-check bigger-110"></i> 
-											cap nhat bai viet
+											update item
 										</button>
 									</c:if>
 									

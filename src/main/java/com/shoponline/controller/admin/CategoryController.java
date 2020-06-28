@@ -60,7 +60,7 @@ public class CategoryController {
 		ModelAndView mav = new ModelAndView("admin/category/edit");
 		model.addAttribute("item", new CategoryDTO());
 		if (id != null) {
-			model = (Model) categoryService.findbyId(id);
+			model.addAttribute("item",categoryService.findbyId(id));
 		}
 		if (request.getParameter("message") != null) {
 			Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));

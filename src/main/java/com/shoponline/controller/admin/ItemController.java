@@ -63,7 +63,7 @@ public class ItemController {
 		ModelAndView mav = new ModelAndView("admin/product/edit");
 		model.addAttribute("item", new ItemDTO());
 		if (id != null) {
-			model = (Model) itemService.findbyId(id);
+			model.addAttribute("item",itemService.findbyId(id));
 		}
 		if (request.getParameter("message") != null) {
 			Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));

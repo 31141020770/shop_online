@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <c:url var="newAPI" value="/api/new"/>
-<c:url var="newURL" value="/admin/news/list"/>
+<c:url var="newURL" value="/admin/list"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -13,14 +13,14 @@
 
 	<body>
 		<div class="main-content">
-		<form action="<c:url value='/admin/product/list'/>" id="formSubmit" method="get">
+		<form action="<c:url value='/admin/list'/>" id="formSubmit" method="get">
 			
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Trang chủ</a>
+								<a href="#">Home</a>
 							</li>
 						</ul>
 						<!-- /.breadcrumb -->
@@ -46,7 +46,7 @@
 															</span>
 												</a>
 												<button id="btnDelete" type="button" onclick="warningBeforeDelete()"
-														class="dt-button buttons-html5 btn btn-white btn-primary btn-bold" data-toggle="tooltip" title='Xóa bài viết'>
+														class="dt-button buttons-html5 btn btn-white btn-primary btn-bold" data-toggle="tooltip" title='delete item'>
 																<span>
 																	<i class="fa fa-trash-o bigger-110 pink"></i>
 																</span>

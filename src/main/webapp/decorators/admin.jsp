@@ -20,10 +20,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- sweetAlert -->
     <script src="<c:url value='/template/admin/sweetalert/sweetalert2.min.js' />"></script>
-    <link rel="stylesheet" href="<c:url value='/template/admin/sweetalert/sweetalert2.min.css' />" />
-	<!-- ckeditor -->
-	<script src="<c:url value='/template/ckeditor/ckeditor.js'/>"></script>
-	
+    <link rel="stylesheet" href="<c:url value='/template/admin/sweetalert/sweetalert2.min.css' />" />	
 </head>
 <body class="no-skin">
 	<!-- header -->
